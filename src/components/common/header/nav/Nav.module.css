@@ -1,0 +1,24 @@
+.NavLink{
+    color: #343434;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-left: 2rem;
+    letter-spacing: 0.05rem;
+}
+
+.dot{
+    color: transparent;
+}
+
+.NavLink:hover{
+    color: #3b6d70;
+}
+
+.selected{
+    color: #3b6d70;
+}
+
+.selected .dot{
+    color: #3b6d70;
+}
