@@ -1,7 +1,9 @@
+import style from "./Carousel.module.css"
+
 const Carousel = () => {
 
     return (
-        <div>
+        <div className={style.div}>
             Soy el Carousel
         </div>
     );

@@ -1,7 +1,9 @@
+import style from "./ServicesHome.module.css"
+
 const ServicesHome = () => {
 
     return (
-        <div>
+        <div className={style.div}>
             Soy el Services Home
         </div>
     );

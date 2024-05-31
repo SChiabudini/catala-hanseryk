@@ -1,22 +1,30 @@
-.div{
-    height: 7rem;
+.div {
+    height: 5rem;
     display: flex;
     align-items: center;
+    transition: background-color 0.3s ease;
 }
 
-.home{
+.home {
     background-color: transparent;
     position: fixed;
     top: 0;
     width: 100%;
 }
 
-.services, .contact{
+.scrolledHome {
+    background-color: rgba(255,255,255,0.9);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.services, .contact {
     background-color: white;
     border-bottom: #343434 solid 2.5px;
 }
 
-.content{
+.content {
     width: 85%;
     max-width: 1280px;
     margin: 0 auto;
@@ -25,15 +33,15 @@
     align-items: center;
 }
 
-h1{
+h1 {
     margin: 0;
-    height: 3.5rem;
+    height: 3rem;
 }
 
-h1 img{
+h1 img {
     height: 100%;
 }
 
-.nav{
+.nav {
     margin-left: auto;
 }

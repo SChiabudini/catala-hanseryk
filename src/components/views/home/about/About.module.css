@@ -1,0 +1,105 @@
+.div{
+    height: calc(100vh + 4rem);
+    display: flex;
+}
+
+.div section{
+    padding-top: 9rem;
+    box-sizing: border-box;
+}
+
+.title{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+
+.div section h2{
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    margin: 0 1rem;
+    display: inline;
+}
+
+.line{
+    height: 0.2rem;
+    background-color: #d4d4d4;
+    width: 100%;
+}
+
+.div section h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    color: #bdbdbd;
+    margin-bottom: 0.5rem;
+}
+
+.content{
+    width: 75%;
+}
+
+.profileImg{
+    width: 25rem;
+    border: #d4d4d4 solid 4px;
+}
+
+.profileImg img{
+    width: 100%;
+    display: block;
+}
+
+.content p{
+    color: #343434;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 2rem;
+    margin: 0;
+}
+
+.catala{
+    text-align: right;
+    background-color: #d4d4d4;
+}
+
+.catala .content{
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+.catala .content .title .line{
+    background-color: white;
+}
+
+.catala .content .withMargin{
+    padding-right: 3rem;
+}
+
+.catala .profileImg{
+    margin-left: auto;
+    border-color: white;
+    border-radius: 8rem 0 0 8rem;
+}
+
+.catala .profileImg img{
+    border-radius: 8rem 0 0 8rem;
+}
+
+.catala .content h3{
+    color: white;
+}
+
+.hanseryk{
+    text-align: left;
+}
+
+.hanseryk .content{
+    box-sizing: border-box;
+}
+
+.hanseryk .content .withMargin{
+    padding-left: 3rem;
+}
