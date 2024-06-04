@@ -1,17 +1,44 @@
-import style from "./About.module.css"
-import catala from "./img/catala.jpg"
-import hanseryk from "./img/hanseryk.jpg"
+import React, { useEffect, useRef } from 'react';
+import style from "./About.module.css";
+import catala from "./img/catala.jpg";
+import hanseryk from "./img/hanseryk.jpg";
 
 const About = () => {
+    const lineRefs = [useRef(null), useRef(null), useRef(null)];
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add(style.animate);
+                    observer.unobserve(entry.target); // Stop observing once the animation starts
+                }
+            });
+        });
+
+        lineRefs.forEach(ref => {
+            if (ref.current) {
+                observer.observe(ref.current);
+            }
+        });
+
+        return () => {
+            lineRefs.forEach(ref => {
+                if (ref.current) {
+                    observer.unobserve(ref.current);
+                }
+            });
+        };
+    }, []);
 
     return (
         <div className={style.div}>
             <section className={style.catala}>
                 <div className={style.content}>
                     <div className={style.title}>
-                        <div className={style.line}></div>
+                        <div className={style.line1}></div>
                         <h2>NOSOTRAS</h2>
-                        <div className={style.line}></div>
+                        <div className={style.line} ref={lineRefs[0]}></div>
                     </div>
                     <div className={style.withMargin}>
                         <div className={style.profileImg}><img src={catala} alt="Samanta Catalá"/></div>
@@ -23,7 +50,7 @@ const About = () => {
             <section className={style.hanseryk}>
                 <div className={style.content}>
                     <div className={style.title}>
-                        <div className={style.line}></div>
+                        <div className={style.line} ref={lineRefs[1]}></div>
                     </div>
                     <div className={style.withMargin}>
                         <div className={style.profileImg}><img src={hanseryk} alt="Cecilia Hanseryk"/></div>

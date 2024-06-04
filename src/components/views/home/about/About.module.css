@@ -24,10 +24,32 @@
     display: inline;
 }
 
-.line{
+@keyframes draw-line {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.line {
     height: 0.2rem;
     background-color: #d4d4d4;
+    width: 0; /* Start with zero width */
+    opacity: 0; /* Initially hide the lines */
+}
+
+.line1{
+    height: 0.2rem;
+    background-color: white;
     width: 100%;
+}
+
+
+.line.animate {
+    animation: draw-line 2s forwards;
+    opacity: 1; /* Show the lines when animation starts */
 }
 
 .div section h3{

@@ -1,16 +1,41 @@
-import style from "./ServicesHome.module.css"
-import normal1 from '../../services/img/normal/1_normal.svg'
-import normal2 from '../../services/img/normal/2_normal.svg'
-import normal3 from '../../services/img/normal/3_normal.svg'
-import normal4 from '../../services/img/normal/4_normal.svg'
-import normal5 from '../../services/img/normal/5_normal.svg'
+import React, { useEffect, useRef } from 'react';
+import style from "./ServicesHome.module.css";
+import normal1 from '../../services/img/normal/1_normal.svg';
+import normal2 from '../../services/img/normal/2_normal.svg';
+import normal3 from '../../services/img/normal/3_normal.svg';
+import normal4 from '../../services/img/normal/4_normal.svg';
+import normal5 from '../../services/img/normal/5_normal.svg';
 
 const ServicesHome = () => {
+    const titleRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add(style.animate);
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        if (titleRef.current) {
+            observer.observe(titleRef.current);
+        }
+
+        return () => {
+            if (titleRef.current) {
+                observer.unobserve(titleRef.current);
+            }
+        };
+    }, []);
 
     return (
         <div className={style.div}>
             <div className={style.content}>
-                <section className={style.title}><h2>SERVICIOS</h2></section>
+                <section className={style.title} ref={titleRef}>
+                    <h2>SERVICIOS</h2>
+                </section>
                 <section className={style.service}>
                     <img src={normal1} alt=""/>
                     <h3>AMPAROS DE SALUD</h3>
@@ -38,6 +63,6 @@ const ServicesHome = () => {
             </div>
         </div>
     );
-}
+};
 
 export default ServicesHome;
