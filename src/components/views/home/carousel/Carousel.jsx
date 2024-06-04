@@ -4,7 +4,7 @@ const Carousel = () => {
 
     return (
         <div className={style.div}>
-            Soy el Carousel
+            <p>Elemento en construcción<br/>HACER SCROLL PARA ABAJO</p>
         </div>
     );
 }

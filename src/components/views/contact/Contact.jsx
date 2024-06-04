@@ -1,8 +1,10 @@
+import style from "./Contact.module.css"
+
 const Contact = () => {
 
     return (
-        <div>
-            Soy el Contact
+        <div className={style.div}>
+            <div>Sección en construcción</div>
         </div>
     );
 }

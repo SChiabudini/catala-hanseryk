@@ -1,4 +1,54 @@
 .div{
-    background-color: red;
+    background-color: #274a62;
     height: calc(100vh + 4rem);
+}
+
+.content{
+    width: 85%;
+    margin: 0 auto;
+    padding: 8rem 0 6rem;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.content section{
+    width: 30%;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    height: 13rem;
+}
+
+.title{
+    border-top: #d4d4d4 solid 2px;
+    border-left: #d4d4d4 solid 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h2{
+    color:#d4d4d4;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.service img{
+    width: 4rem;
+}
+
+.service h3{
+    color: white;
+    letter-spacing: 0.15rem;
+    font-weight: 400;
+}
+
+.service p{
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
 }
