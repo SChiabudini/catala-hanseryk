@@ -72,11 +72,31 @@
 .container {
     flex: 1;
     padding: 5rem;
+    overflow: hidden;
+    position: relative;
 }
 
 .container p{
     color: white;
+    padding-right: 2rem;
     font-weight: 300;
     letter-spacing: 0.05rem;
     line-height: 2rem;
+    margin: 0;
+    overflow-y: auto;
+    max-height: calc(100vh - 12rem - 2.5px - 10rem);
+}
+
+.container p::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container p::-webkit-scrollbar-thumb {
+    background-color: #3b6d70;
+    border-radius: 10px;
+}
+
+.container p::-webkit-scrollbar-track {
+    background-color: #1e3c4c;
+    border-radius: 10px;
 }

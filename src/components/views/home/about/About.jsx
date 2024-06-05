@@ -11,7 +11,7 @@ const About = () => {
             entries.forEach((entry, index) => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add(style.animate);
-                    observer.unobserve(entry.target); // Stop observing once the animation starts
+                    observer.unobserve(entry.target);
                 }
             });
         });

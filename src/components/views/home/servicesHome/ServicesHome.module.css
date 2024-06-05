@@ -51,7 +51,7 @@
     content: '';
     position: absolute;
     background-color: #d4d4d4;
-    opacity: 0; /* Initially hide the borders */
+    opacity: 0;
 }
 
 .title.animate::before {
@@ -60,7 +60,7 @@
     width: 100%;
     height: 2px;
     animation: draw-border-top 2s forwards;
-    opacity: 1; /* Show the borders when animation starts */
+    opacity: 1;
 }
 
 .title.animate::after {
@@ -69,7 +69,7 @@
     width: 2px;
     height: 100%;
     animation: draw-border-left 2s forwards;
-    opacity: 1; /* Show the borders when animation starts */
+    opacity: 1;
 }
 .title h2{
     color:#d4d4d4;
