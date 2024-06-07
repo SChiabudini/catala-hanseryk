@@ -6,11 +6,17 @@ import Home from './components/views/home/Home';
 import Services from './components/views/services/Services';
 import Contact from './components/views/contact/Contact';
 import Error from './components/views/error/Error';
+import emailjs from 'emailjs-com';
+import { useEffect } from 'react';
 
 function App() {
 
   const location = useLocation();
   const hideFooter = location.pathname.includes('/contacto');
+
+  useEffect(() => {
+    emailjs.init('P0x0l4dlHg2Tkuo5I');
+  }, [])
 
   return (
     <div className="App">

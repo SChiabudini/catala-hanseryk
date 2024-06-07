@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-//import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
 import validation from './validation';
 import style from './Form.module.css';
 
@@ -59,30 +59,30 @@ const Form = () => {
 
         setIsSending(true);
 
-        //const serviceId = 'service_z1c92mg';
-        //const templateId = 'template_s5611cg';
+        const serviceId = 'service_o5y0bpv';
+        const templateId = 'template_ox14wll';
 
-        // emailjs.send(serviceId, templateId, userInput).then(
-        //     (response) => {
-        //         console.log('Correo electrónico enviado con éxito:', response);
-        //         setSuccessMessage(
-        //             'El mensaje ha sido enviado con éxito. En breve nos comunicaremos con usted.'
-        //         );
-        //         setUserInput(initialUserInput);
-        //         setTouchedFields({
-        //             name: false,
-        //             number: false,
-        //             email: false,
-        //             message: false
-        //         });
-        //         setErrors({});
-        //     },
-        //     (error) => {
-        //         console.error('Error al enviar el correo electrónico:', error);
-        //     }
-        // ).finally(() => {
-        //     setIsSending(false);
-        // });
+        emailjs.send(serviceId, templateId, userInput).then(
+            (response) => {
+                console.log('Correo electrónico enviado con éxito:', response);
+                setSuccessMessage(
+                    'El mensaje ha sido enviado. En breve nos comunicaremos con usted.'
+                );
+                setUserInput(initialUserInput);
+                setTouchedFields({
+                    name: false,
+                    number: false,
+                    email: false,
+                    message: false
+                });
+                setErrors({});
+            },
+            (error) => {
+                console.error('Error al enviar el correo electrónico:', error);
+            }
+        ).finally(() => {
+            setIsSending(false);
+        });
     };
 
     const handleSubmit = (event) => {
@@ -144,7 +144,7 @@ const Form = () => {
                             {isSending ? 'Enviando...' : 'Enviar'}
                         </button>
                     </div>
-                    {successMessage && <p style={{ color: 'white', textAlign: 'center' }}>{successMessage}</p>}
+                    {successMessage && <p style={{ color: '#274a62', textAlign: 'center', fontSize: '0.75rem'}}>{successMessage}</p>}
                 </form>
             </div>
         </div>
