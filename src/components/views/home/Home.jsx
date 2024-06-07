@@ -1,4 +1,4 @@
-import Carousel from "./carousel/Carousel";
+import HomeCarousel from "./carousel/Carousel";
 import About from "./about/About";
 import ServicesHome from "./servicesHome/ServicesHome";
 
@@ -6,7 +6,7 @@ const Home = () => {
 
     return (
         <div>
-            <Carousel/>
+            <HomeCarousel/>
             <About/>
             <ServicesHome/>
         </div>
