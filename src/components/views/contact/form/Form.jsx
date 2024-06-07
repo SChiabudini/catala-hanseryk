@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 //import emailjs from 'emailjs-com';
-//import validation from './validation';
+import validation from './validation';
 import style from './Form.module.css';
 
 const Form = () => {
@@ -42,15 +42,15 @@ const Form = () => {
 
         setErrors((prevErrors) => ({
             ...prevErrors,
-            //[name]: touchedFields[name] ? validation(userInput)[name] : ''
+            [name]: touchedFields[name] ? validation(userInput)[name] : ''
         }));
     };
 
     const isFormValid = () => {
-        //const formErrors = validation(userInput);
+        const formErrors = validation(userInput);
         const isEmptyField = Object.values(userInput).some((value) => value === '');
-        //const hasError = Object.values(formErrors).some((error) => error !== '');
-        //return !isEmptyField && !hasError;
+        const hasError = Object.values(formErrors).some((error) => error !== '');
+        return !isEmptyField && !hasError;
     };
 
     const [isSending, setIsSending] = useState(false);
@@ -98,55 +98,55 @@ const Form = () => {
 
     return (
         <div className={style.div}>
-            <h3>Envianos tu consulta</h3>
-            
-            <form onSubmit={handleSubmit}>
-                <p className={style.label}><label htmlFor="name">Nombre*</label></p>
-                <p className={style.input}><input
-                    name="name"
-                    type="text"
-                    placeholder='Debe contener entre 3 y 30 caracteres'
-                    value={userInput.name}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                /></p>
-                {touchedFields.name && errors.name && <p className={style.error}>{errors.name}</p>}
-                <p className={style.label}><label htmlFor="number">Teléfono*</label></p>
-                <p className={style.input}><input
-                    name="number"
-                    type="text"
-                    placeholder='Solo números, sin 0 y sin 15'
-                    value={userInput.number}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                /></p>
-                {touchedFields.number && errors.number && <p className={style.error}>{errors.number}</p>}
-                <p className={style.label}><label htmlFor="email">Email*</label></p>
-                <p className={style.input}><input
-                    name="email"
-                    type="email"
-                    placeholder='tuemail@correo.com'
-                    value={userInput.email}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                /></p>
-                {touchedFields.email && errors.email && <p className={style.error}>{errors.email}</p>}
-                <p className={style.label}><label htmlFor="message">Mensaje*</label></p>
-                <p className={style.input}><textarea
-                    name="message"
-                    placeholder='Debe contener al menos 20 caracteres de longitud'
-                    value={userInput.message}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                ></textarea></p>
-                {touchedFields.message && errors.message && <p className={style.error}>{errors.message}</p>}
-                <div className={style.formButton}>
-                    <button type="submit" disabled={!isFormValid() || isSending}>
-                        {isSending ? 'Enviando...' : 'Enviar'}
-                    </button>
-                </div>
-                {successMessage && <p style={{ color: 'white', textAlign: 'center' }}>{successMessage}</p>}
-            </form>
+            <div className={style.content}>
+            <h2>•‎ ‎ENVIANOS TU CONSULTA‎ ‎•</h2>
+                <form onSubmit={handleSubmit}>
+                    <p className={style.label}><label htmlFor="name">Nombre*</label></p>
+                    <p className={style.input}><input
+                        name="name"
+                        type="text"
+                        placeholder='Debe contener entre 3 y 30 caracteres'
+                        value={userInput.name}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                    /></p>
+                    {touchedFields.name && errors.name && <p className={style.error}>{errors.name}</p>}
+                    <p className={style.label}><label htmlFor="number">Teléfono*</label></p>
+                    <p className={style.input}><input
+                        name="number"
+                        type="text"
+                        placeholder='Solo números, sin 0 y sin 15'
+                        value={userInput.number}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                    /></p>
+                    {touchedFields.number && errors.number && <p className={style.error}>{errors.number}</p>}
+                    <p className={style.label}><label htmlFor="email">Email*</label></p>
+                    <p className={style.input}><input
+                        name="email"
+                        type="email"
+                        placeholder='tuemail@correo.com'
+                        value={userInput.email}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                    /></p>
+                    {touchedFields.email && errors.email && <p className={style.error}>{errors.email}</p>}
+                    <p className={style.label}><label htmlFor="message">Mensaje*</label></p>
+                    <p className={style.input}><textarea
+                        name="message"
+                        value={userInput.message}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                    ></textarea></p>
+                    {touchedFields.message && errors.message && <p className={style.error}>{errors.message}</p>}
+                    <div className={style.formButton}>
+                        <button type="submit" disabled={!isFormValid() || isSending}>
+                            {isSending ? 'Enviando...' : 'Enviar'}
+                        </button>
+                    </div>
+                    {successMessage && <p style={{ color: 'white', textAlign: 'center' }}>{successMessage}</p>}
+                </form>
+            </div>
         </div>
     )
 }
