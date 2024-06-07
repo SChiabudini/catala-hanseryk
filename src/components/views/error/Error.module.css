@@ -1,0 +1,49 @@
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 12rem);
+}
+
+.div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./img/error_bg.svg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+.div p{
+    color: #274a62;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    font-size: 48px;
+    margin: 0.5rem auto;
+}
+
+.div p.second{
+    font-weight: 300;
+    font-size: 36px;
+    padding-bottom: 2.5rem;
+    border-bottom: 3px solid #274a62;
+    width: 60%;
+}
+
+.div a{
+    margin-top: 2rem;
+    color: #274a62;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.05rem;
+    border: 2px solid #274a62;
+}
+
+.div a:hover{
+    background-color: #274a62;
+    color: white;
+}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import Nav from "./nav/Nav";
 import logoHeader from "./logo.svg";
 import style from "./Header.module.css";
@@ -37,9 +38,11 @@ const Header = () => {
     return (
         <div className={`${style.div} ${headerClass}`}>
             <div className={style.content}>
-                <h1>
-                    <img src={logoHeader} alt="Catalá Hanserik - Logo" title="Catalá Hanserik - Abogadas"/>
-                </h1>
+                <NavLink to="/">
+                    <h1>
+                        <img src={logoHeader} alt="Catalá Hanserik - Logo" title="Catalá Hanserik - Abogadas"/>
+                    </h1>
+                </NavLink>
                 <div className={style.nav}><Nav/></div>
             </div>
         </div>
