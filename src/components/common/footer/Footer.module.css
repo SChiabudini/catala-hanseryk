@@ -49,3 +49,13 @@
 .social a img{
     height: 2.25rem;
 }
+
+@media (max-width: 721px){
+    .content{
+        flex-direction: column;   
+    }
+
+    .location{
+        margin-bottom: 1rem;
+    }
+}
