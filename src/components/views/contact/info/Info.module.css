@@ -61,3 +61,16 @@
     text-decoration: underline;
 }
 
+@media (max-width: 721px){
+
+    .methods{
+        height: 100%;
+        margin-left: 0;
+    }
+
+    .method{
+        width: 100%;
+        margin: 2rem;
+    }
+}
+

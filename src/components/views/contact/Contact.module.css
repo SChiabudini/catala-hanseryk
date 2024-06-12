@@ -18,3 +18,26 @@
     width: 100%;
     height: calc(100vh - 5rem);
 }
+
+
+@media (max-width: 1025px){
+    .div{
+        height: fit-content;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 721px){
+    .div{
+        padding-top: 5rem;
+        box-sizing: border-box;
+    }
+
+    .content section{
+        height: fit-content;
+    }
+}

@@ -94,8 +94,17 @@ form button:disabled{
 }
 
 @media (max-width: 721px){
-    .div h3{
-        font-size: 18px;
+
+    .div{
+        margin-bottom: 3rem;
+        padding: 0;
+        padding-top: 3rem;
+        justify-content: center;
+    }
+
+    .div .content{
+        width: 85%;
+        margin: 0 auto;
     }
 
     form button{
