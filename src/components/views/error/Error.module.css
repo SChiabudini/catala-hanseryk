@@ -47,3 +47,11 @@
     background-color: #274a62;
     color: white;
 }
+
+@media (max-width: 721px){
+    .div{
+        height: calc(100vh - 9rem);
+        padding-top: 6rem;
+        box-sizing: border-box;
+    }
+}
