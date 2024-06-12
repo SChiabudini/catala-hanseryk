@@ -22,3 +22,24 @@
 .selected .dot{
     color: #3b6d70;
 }
+
+@media (max-width: 721px){
+    .div{
+        width: 100%;
+        background-color: white;
+        border-top: #343434 solid 1.5px;
+    }
+
+    .NavLink{
+        display: block;
+        margin-left: 0;
+        height: 3rem;
+        line-height: 3.5rem;
+        padding-bottom: none;
+    }
+
+    .NavLink:hover, .selected{
+        border: none;
+        background-color: rgba(0, 0, 0, 0.03);
+    }
+}

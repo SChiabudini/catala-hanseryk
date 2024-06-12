@@ -5,7 +5,7 @@ const Nav = () => {
     const location = useLocation();
 
     return (
-        <div>
+        <div className={style.div}>
             <NavLink
                 className={`${style.NavLink} ${location.pathname === '/' ? style.selected : ''}`}
                 to="/"
