@@ -93,3 +93,33 @@
     letter-spacing: 0.1rem;
     font-weight: 300;
 }
+
+@media (max-width: 1025px){
+
+    .div{
+        height: fit-content;
+    }
+    
+    .content section{
+        width: 50%;
+    }
+
+    .title{
+        height: 15rem !important;
+    }
+}
+
+
+@media (max-width: 721px){
+
+    .content section{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .title{
+        height: 10rem !important;
+        margin-top: 0 !important;
+    }
+
+}

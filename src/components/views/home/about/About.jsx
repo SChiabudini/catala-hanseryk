@@ -8,6 +8,16 @@ const About = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 720);
 
     useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 720);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    useEffect(() => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach((entry, index) => {
                 if (entry.isIntersecting) {

@@ -51,8 +51,13 @@
 }
 
 @media (max-width: 721px){
+
+    .div{
+        padding: 1rem 0;
+    }
+
     .content{
-        flex-direction: column;   
+        flex-direction: column;
     }
 
     .location{
