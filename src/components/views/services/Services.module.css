@@ -104,6 +104,7 @@
 @media (max-width: 721px){
     .div{
         height: auto;
+        min-height: calc(100vh - 12rem - 2.5px);
     }
 
     .content{
