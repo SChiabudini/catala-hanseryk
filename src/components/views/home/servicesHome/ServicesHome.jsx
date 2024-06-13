@@ -30,13 +30,15 @@ const ServicesHome = () => {
             });
         });
 
-        if (titleRef.current) {
-            observer.observe(titleRef.current);
+        const currentTitleRef = titleRef.current;
+
+        if (currentTitleRef) {
+            observer.observe(currentTitleRef);
         }
 
         return () => {
-            if (titleRef.current) {
-                observer.unobserve(titleRef.current);
+            if (currentTitleRef) {
+                observer.unobserve(currentTitleRef);
             }
         };
     }, []);
