@@ -25,34 +25,34 @@ const HomeCarousel = () => {
         <div>
             {isMobile ? (
                 <div className={style.div}>
-                    <Carousel showThumbs={false} showStatus={false} infiniteLoop={true} autoPlay={false} interval={5000} transitionTime={1000} onChange={handleChange}>
+                    <Carousel showThumbs={false} showStatus={false} infiniteLoop={true} autoPlay={false} interval={5000} transitionTime={1000} onChange={handleChange} swipeable={false}>
                         <div className={`${style.banner1} ${activeIndex === 0 ? style.active : ''}`}>
                             <div className={style.transparency}>
                                 <div className={style.content}>
-                                    <div className={style.elements}>
-                                        <div className={style.lines}>
-                                            <div className={style.horizontal}></div>
-                                            <div className={style.vertical}></div>
-                                        </div>
                                         <div className={style.text}>
-                                            <p className={style.title}>Gestión de<br />ciudadanía italiana</p>
+                                            <p className={style.title}>Gestión de ciudadanía italiana</p>
                                             <p className={style.resume}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
                                         </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div className={`${style.banner2} ${activeIndex === 1 ? style.active : ''}`}>
                             <div className={style.transparency}>
                                 <div className={style.content}>
-                                    1
+                                    <div className={style.text}>
+                                        <p className={style.title}>Asistencia, asesoría y amparos</p>
+                                        <p className={style.resume}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div className={`${style.banner3} ${activeIndex === 2 ? style.active : ''}`}>
                             <div className={style.transparency}>
                                 <div className={style.content}>
-                                    1
+                                    <div className={style.text}>
+                                        <p className={style.title}>Pequeñas empresas y freelancers</p>
+                                        <p className={style.resume}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -70,7 +70,7 @@ const HomeCarousel = () => {
                                             <div className={style.vertical}></div>
                                         </div>
                                         <div className={style.text}>
-                                            <p className={style.title}>Gestión de<br />ciudadanía italiana</p>
+                                            <p className={style.title}>Gestión de<br/>ciudadanía italiana</p>
                                             <p className={style.resume}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
                                         </div>
                                     </div>
@@ -82,7 +82,7 @@ const HomeCarousel = () => {
                                 <div className={style.content}>
                                     <div className={style.elements}>
                                         <div className={style.text}>
-                                            <p className={style.title}>Asistencia, asesoría<br />y amparos</p>
+                                            <p className={style.title}>Asistencia, asesoría<br/>y amparos</p>
                                             <p className={style.resume}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
                                         </div>
                                         <div className={style.lines}>
@@ -103,7 +103,7 @@ const HomeCarousel = () => {
                                             <div className={style.vertical}></div>
                                         </div>
                                         <div className={style.text}>
-                                            <p className={style.title}>Pequeñas empresas<br />y freelancers</p>
+                                            <p className={style.title}>Pequeñas empresas<br/>y freelancers</p>
                                             <p className={style.resume}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
                                         </div>
                                     </div>

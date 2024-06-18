@@ -144,3 +144,20 @@
 .banner2 .horizontal{
     animation: none;
 }
+
+@media (max-width: 721px) {
+    
+    .content{
+        width: 87%;
+    }
+    
+    .title{
+        height: fit-content;
+        font-size: 2.8rem;
+        line-height: 3.5rem;
+    }
+    
+    .resume{
+        width: 100%;
+    }
+}
