@@ -40,6 +40,12 @@
     background-size: cover;
     z-index: -1;
     text-align: right;
+    transform: scaleX(-1);
+}
+
+.banner3 .transparency{
+    
+    transform: scaleX(-1);
 }
 
 .content{
