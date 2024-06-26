@@ -59,8 +59,8 @@ const Form = () => {
 
         setIsSending(true);
 
-        const serviceId = 'service_o5y0bpv';
-        const templateId = 'template_ox14wll';
+        const serviceId = 'service_tihjvy5';
+        const templateId = 'template_jch27un';
 
         emailjs.send(serviceId, templateId, userInput).then(
             (response) => {
