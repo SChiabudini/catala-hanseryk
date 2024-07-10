@@ -87,6 +87,10 @@
     font-weight: 400;
 }
 
+.service h3.bold{
+    font-weight: 600;
+}
+
 .service p{
     color: white;
     font-size: 0.9rem;
