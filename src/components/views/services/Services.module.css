@@ -76,7 +76,7 @@
     position: relative;
 }
 
-.container p{
+.containerDiv{
     color: white;
     padding-right: 2rem;
     font-weight: 300;
@@ -85,20 +85,25 @@
     margin: 0;
     overflow-y: auto;
     max-height: calc(100vh - 12rem - 2.5px - 10rem);
+    text-align: left;
 }
 
-.container p::-webkit-scrollbar {
+.containerDiv::-webkit-scrollbar {
     width: 8px;
 }
 
-.container p::-webkit-scrollbar-thumb {
+.containerDiv::-webkit-scrollbar-thumb {
     background-color: #3b6d70;
     border-radius: 10px;
 }
 
-.container p::-webkit-scrollbar-track {
+.containerDiv::-webkit-scrollbar-track {
     background-color: #1e3c4c;
     border-radius: 10px;
+}
+
+.containerDiv ol, .containerDiv ol li{
+    text-align: left;
 }
 
 @media (max-width: 721px){
