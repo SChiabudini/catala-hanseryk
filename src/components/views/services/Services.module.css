@@ -106,6 +106,21 @@
     text-align: left;
 }
 
+h2{
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    margin: 2rem 0 0;
+}
+
+.container h3{
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+}
+
 @media (max-width: 721px){
     .div{
         height: auto;
@@ -161,7 +176,7 @@
         height: auto !important;
     }
 
-    .container p{
+    .containerDiv p{
         color: white;
         padding-right: 1rem;
         font-weight: 300;
@@ -172,10 +187,14 @@
         max-height:fit-content;
     }
 
-    .container .selectedItemTitle{
+    .containerDiv .selectedItemTitle{
         font-weight: 600;
         letter-spacing: 0.1rem;
         font-size: 1rem;
         margin-bottom: 1rem;
+    }
+
+    .containerDiv{
+        text-align:justify;
     }
 }

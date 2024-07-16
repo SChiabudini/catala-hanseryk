@@ -20,7 +20,22 @@ const Services = () => {
             buttonImgNormal: normal1,
             buttonImgSelected: selected1,
             buttonText: "AMPAROS DE SALUD",
-            content: "1. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed  1. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed"
+            content: `<p>
+            Si ya te cansaste de reclamarle a tu Prepaga u Obra Social y continuas sin recibir una respuesta favorable, te ayudamos a que puedas solucionar este problema poniendo a tu salud y a la de tus seres queridos como la principal prioridad.<br/>
+                Tramitamos tu AMPARO DE SALUD por:
+                <ol>
+                    <li>Rechazo de cobertura o demoras en autorizaciones.</li>
+                    <li>Falta de entrega de medicación.</li>
+                    <li>Demora, saturación o rechazo en las prestaciones asistenciales.</li>
+                    <li>Incumplimientos en servicios médicos para personas con discapacidades.</li>
+                    <li>Negativa de tratamientos médicos, cobertura de prótesis o cirugías.</li>
+                    <li>Desafiliaciones compulsivas o arbitrarias en razón de embarazos o supuestas preexistencias.</li>
+                    <li>¿Te jubilaste y querés derivar aportes o continuar con tu Prepaga sin pasarte a PAMI?</li>
+                    <li>Cobertura de residencias y geriatricos para adultos mayores.</li>
+                    <li>Cobertura para los tratamientos de fertilidad.</li>
+                    <li>Cualquier conflicto que tengas con tu Prepaga u Obra Social en el que no estén escuchando ni haciendo lugar a tus reclamos.</li>
+                </ol>
+            </p>`
         },
         {
             buttonImgNormal: normal2,
@@ -32,7 +47,19 @@ const Services = () => {
             buttonImgNormal: normal3,
             buttonImgSelected: selected3,
             buttonText: "ACCIDENTES DE TRABAJO",
-            content: "3. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed "
+            content: `<h3>¿Qué es un accidente de trabajo?</h3>
+                <p>Los accidentes de trabajo son aquellos hechos súbitos y violentos que ocurren cuando el trabajador se encuentra realizando sus tareas habituales (denominados “en ocasión”) o los hechos que suceden entre el trayecto que va del lugar de trabajo al domicilio del trabajador - o al revés-, siendo estos denominados “in itinere”. En otras palabras, el accidente de trabajo es aquel hecho que afecta a tu salud física o mental que ocurre de forma inesperada, ocasionado durante las horas que te encontrás trabajando o en el trayecto de ida y vuelta a tu domicilio.</p>
+                <h3>¿Qué puede ser considerado una enfermedad profesional?</h3>
+                <p>Las enfermedades son aquellas producidas por la tarea desempeñada o a causa del lugar de trabajo. Existe un listado de enfermedades profesionales que las enumera y específica también los "factores de riesgo" -situaciones que pueden considerarse de riesgo o afectar al ser humano- como ventilación, manipulación de sustancias químicas, posición de trabajo, carga de trabajo, ruidos, etc. Las que no se encuentren listadas, deben ser denunciadas y tienen un procedimiento administrativo especial para su reconocimiento.</p>
+                <p><b>En sintesis, las enfermedades profesionales son aquellas ocasionadas directamente por el trabajo que realiza una persona.</b></p> 
+                <p>Nuestros servicios:
+                    <ul>
+                        <li>Analizamos tu caso y te asesoramos virtual o presencialmente, según tu necesidad.</li>
+                        <li>Para el caso que la Aseguradora de Riesgos del Trabajo (ART) te esté brindando prestaciones deficientes y/o te haya dado el alta médica de forma prematura, te explicamos cómo proceder ante la Superintendencia de Riesgos del Trabajo y redactamos los telegramas laborales que necesites.</li>
+                        <li>Si la ART te mandó una carta documento y rechazó total o parcialmente el siniestro (por accidente o enfermedad profesional), iniciamos los trámites necesarios para que te den prestaciones médicas y dinerarias.</li>
+                        <li>Iniciamos y te acompañamos en el expediente administrativo ante la Comisión Médica de la Superintendencia de Riesgos del Trabajo y en el proceso judicial posterior -cuando sea necesario-.</li>
+                </ul>
+            </p>`
         },
         {
             buttonImgNormal: normal4,
@@ -121,9 +148,9 @@ const Services = () => {
                                 </button>
                             ))}
                         </div>
+                        <h2>{items[selectedItem].buttonText}</h2>
                         <div className={style.container}>
-                            <p className={style.selectedItemTitle}>{items[selectedItem].buttonText}</p>
-                            <p>{items[selectedItem].content}</p>
+                            <div dangerouslySetInnerHTML={{ __html: items[selectedItem].content }}  className={style.containerDiv}/>
                         </div>
                     </div>
                 </div>

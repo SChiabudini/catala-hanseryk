@@ -54,7 +54,7 @@ const ServicesHome = () => {
                     <section className={style.service}>
                         <img src={normal1} alt=""/>
                         <h3>AMPAROS DE SALUD</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                        <p>¿Tenes problemas con tu obra social o Prepaga? Contamos con gran experiencia en defensa de los derechos de la salud. Brindamos asesoría y realizamos todas las gestiones administrativas y judiciales para que puedas recibir las prestaciones que te corresponden.</p>
                     </section>
                     <section className={style.service}>
                         <img src={normal2} alt=""/>
@@ -64,7 +64,7 @@ const ServicesHome = () => {
                     <section className={style.service}>
                         <img src={normal3} alt=""/>
                         <h3>ACCIDENTES DE TRABAJO</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                        <p>Llevamos adelante tu reclamo para que puedas percibir tu indemnización por accidente de trabajo o enfermedad profesional.</p>
                     </section>
                     <section className={style.service}>
                         <img src={normal4} alt=""/>
@@ -86,7 +86,7 @@ const ServicesHome = () => {
                         <section className={style.service}>
                             <img src={normal1} alt=""/>
                             <h3>AMPAROS DE SALUD</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                            <p>Brindamos asesoría y realizamos todas las gestiones administrativas y judiciales para que puedas recibir las prestaciones que te corresponden.</p>
                         </section>
                         <section className={style.service}>
                             <img src={normal2} alt=""/>
@@ -96,7 +96,7 @@ const ServicesHome = () => {
                         <section className={style.service}>
                             <img src={normal3} alt=""/>
                             <h3>ACCIDENTES DE TRABAJO</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                            <p>Llevamos adelante tu reclamo para que puedas percibir tu indemnización por accidente de trabajo o enfermedad profesional.</p>
                         </section>
                         <section className={style.service}>
                             <img src={normal4} alt=""/>
