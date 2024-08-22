@@ -55,12 +55,12 @@ const About = () => {
                     <section className={style.catala}>
                         <div className={style.profileImg}><img src={catala} alt="Samanta Catalá"/></div>
                         <h3>SAMANTA CATALÁ</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p>Abogada egresada de la Universidad de Buenos Aires con una gran formación académica y destacada trayectoria en el ámbito del Derecho Privado, Internacional Privado y del Consumo. Su enfoque práctico y capacidad para construir relaciones sólidas con sus clientes le han permitido brindar un servicio integral con soluciones innovadoras y eficientes.</p>
                     </section>
                     <section className={style.hanseryk}>
                         <div className={style.profileImg}><img src={hanseryk} alt="Cecilia Hanseryk"/></div>
                         <h3>CECILIA HANSERYK</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p>Abogada egresada de la Universidad de Buenos Aires con una sólida trayectoria de más de 15 años, especializada en Derecho Civil y del Trabajo. Su amplia experiencia abarca tanto el sector público como el privado, donde ha representado los intereses de una diversa clientela, desde trabajadores hasta grandes corporaciones. Su profundo conocimiento del sistema legal argentino le permite ofrecer soluciones personalizadas y efectivas a cada caso.</p>
                     </section>
                     </div>
                 </div>
@@ -76,7 +76,7 @@ const About = () => {
                             <div className={style.withMargin}>
                                 <div className={style.profileImg}><img src={catala} alt="Samanta Catalá"/></div>
                                 <h3>SAMANTA CATALÁ</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                <p>Abogada egresada de la Universidad de Buenos Aires con una gran formación académica y destacada trayectoria en el ámbito del Derecho Privado, Internacional Privado y del Consumo. Su enfoque práctico y capacidad para construir relaciones sólidas con sus clientes le han permitido brindar un servicio integral con soluciones innovadoras y eficientes.</p>
                             </div>
                         </div>
                     </section>
@@ -88,7 +88,7 @@ const About = () => {
                             <div className={style.withMargin}>
                                 <div className={style.profileImg}><img src={hanseryk} alt="Cecilia Hanseryk"/></div>
                                 <h3>CECILIA HANSERYK</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                <p>Abogada egresada de la Universidad de Buenos Aires con una sólida trayectoria de más de 15 años, especializada en Derecho Civil y del Trabajo. Su amplia experiencia abarca tanto el sector público como el privado, donde ha representado los intereses de una diversa clientela, desde trabajadores hasta grandes corporaciones. Su profundo conocimiento del sistema legal argentino le permite ofrecer soluciones personalizadas y efectivas a cada caso.</p>
                             </div>
                         </div>
                     </section>

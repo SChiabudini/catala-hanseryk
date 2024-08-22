@@ -41,7 +41,15 @@ const Services = () => {
             buttonImgNormal: normal2,
             buttonImgSelected: selected2,
             buttonText: "DEFENSA DEL CONSUMIDOR",
-            content: "2. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed "
+            content: `<p>
+                Nuestro estudio jurídico te asesora y representa en reclamos por productos defectuosos, servicios mal prestados y publicidad engañosa. Defendemos tu interés ante el abuso y destrato de las empresas.
+                <ul>
+                    <li><b>Asesoramiento personalizado:</b> Analizamos tu caso y te explicamos tus derechos.</li>
+                    <li><b>Reclamos formales:</b> Presentamos tus reclamos ante empresas y organismos de control.</li>
+                    <li><b>Representación judicial:</b> Te acompañamos en todo el proceso legal para que puedas recuperar tu dinero, evitar nuevos problemas y te sientas respaldado ante los abusos de las empresas.</li>
+                    <li><b>Somos especialistas en DERECHO DEL TURISMO:</b> efectuamos reclamos por cancelaciones, retrasos, pérdidas de equipaje y publicidad engañosa además de hacer valer tus derechos como pasajero.</li>
+                </ul>    
+            </p>`
         },
         {
             buttonImgNormal: normal3,
@@ -116,8 +124,16 @@ const Services = () => {
         {
             buttonImgNormal: normal5,
             buttonImgSelected: selected5,
-            buttonText: "PEQUEÑAS EMPRESAS",
-            content: "5. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed "
+            buttonText: "EMPRESAS",
+            content: `<p>
+                Brindamos soluciones personalizadas para resolver disputas contractuales, societarias y laborales. Protegemos tus intereses y buscamos los mejores resultados diseñando estrategias legales a medida para tu empresa. 
+                Entre otros servicios, ofrecemos:
+                <ul>
+                    <li><b>Conflictos contractuales:</b> Revisión, negociación y ejecución de contratos.</li>
+                    <li><b>Disputas societarias:</b> Resolución de conflictos entre socios y accionistas.</li>
+                    <li><b>Derecho laboral:</b> Asesoramiento en relaciones laborales y resolución de conflictos.</li>
+                </ul>
+            </p>`
         }
     ];
 

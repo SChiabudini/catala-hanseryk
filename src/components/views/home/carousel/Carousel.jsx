@@ -50,7 +50,7 @@ const HomeCarousel = () => {
                             <div className={style.transparency}>
                                 <div className={style.content}>
                                     <div className={style.text}>
-                                        <p className={style.title}>Pequeñas empresas y freelancers</p>
+                                        <p className={style.title}>Empresas y freelancers</p>
                                         <p className={style.resume}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
                                     </div>
                                 </div>
@@ -103,7 +103,7 @@ const HomeCarousel = () => {
                                             <div className={style.vertical}></div>
                                         </div>
                                         <div className={style.text}>
-                                            <p className={style.title}>Pequeñas empresas<br/>y freelancers</p>
+                                            <p className={style.title}>Empresas<br/>y freelancers</p>
                                             <p className={style.resume}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
                                         </div>
                                     </div>

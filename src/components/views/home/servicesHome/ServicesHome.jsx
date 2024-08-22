@@ -72,7 +72,7 @@ const ServicesHome = () => {
                         <p className={style.bold}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p></section>
                     <section className={style.service}>
                         <img src={normal5} alt=""/>
-                        <h3>PEQUEÑAS EMPRESAS</h3>
+                        <h3>EMPRESAS</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
                     </section>
                 </div>
@@ -104,7 +104,7 @@ const ServicesHome = () => {
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p></section>
                         <section className={style.service}>
                             <img src={normal5} alt=""/>
-                            <h3>PEQUEÑAS EMPRESAS</h3>
+                            <h3>EMPRESAS</h3>
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
                         </section>
                     </div>
